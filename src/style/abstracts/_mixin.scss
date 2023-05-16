@@ -42,6 +42,23 @@
   text-transform: uppercase;
 }
 
+@mixin font-titleX1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+}
+
+@mixin font-description {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 @mixin content-up {
   position: relative;
   z-index: 2;

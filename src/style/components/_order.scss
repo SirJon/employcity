@@ -1,10 +1,23 @@
 .order{
   position: relative;
   background: rgba($color: $background-dark, $alpha: 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  color: $white;
 }
 
 .order__title {
   @include content-up;
+  @include font-titleX1;
+  margin-bottom: 30px;
+}
+
+.order__description{
+  @include font-description;
+  color: $grey-light;
+  margin-bottom: 80px;
 }
 
 .order__list{
