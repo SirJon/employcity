@@ -1,0 +1,58 @@
+@mixin font-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+@mixin font-header {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@mixin font-title-main {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+@mixin font-title-list {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin font-button {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@mixin content-up {
+  position: relative;
+  z-index: 2;
+}
+
+@mixin background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

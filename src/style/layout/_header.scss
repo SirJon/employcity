@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+
+  background: rgba($color: $background-dark, $alpha: 0.9);
+  color: $white;
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 32px 0;
+
+  max-width: 1170px;
+}
+
+.header__list{
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.header__logo{
+  @include font-logo;
+}
+
+.header__link{
+  @include font-header;
+}

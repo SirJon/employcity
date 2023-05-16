@@ -1,0 +1,20 @@
+.order{
+  position: relative;
+  background: rgba($color: $background-dark, $alpha: 0.9);
+}
+
+.order__title {
+  @include content-up;
+}
+
+.order__list{
+  @include content-up;
+}
+
+.order__form{
+  @include content-up;
+}
+
+.order__background{
+  @include background;
+}

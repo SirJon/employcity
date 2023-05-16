@@ -1,0 +1,44 @@
+.info{
+  padding: 200px 0 150px;
+  position: relative;
+}
+
+.info__title {
+  @include content-up;
+  @include font-title-main;
+  max-width: 780px
+}
+
+.info__section{
+  @include content-up;
+}
+
+.info__background{
+  @include background;
+}
+
+.info__subtitle{
+  @include font-title-list;
+  margin-bottom: 10px;
+}
+
+.info__list{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 30px;
+  margin-bottom: 80px;
+}
+
+.info__wrapper--button{
+  display: flex;
+  gap: 30px;
+}
+
+.info__button{
+  @include font-button;
+  width: 183px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 15px 0;
+}
