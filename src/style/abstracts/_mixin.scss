@@ -1,5 +1,5 @@
 @mixin font-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 28px;
@@ -8,7 +8,7 @@
 }
 
 @mixin font-header {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -16,8 +16,16 @@
   text-transform: uppercase;
 }
 
+@mixin font-footer {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
 @mixin font-title-main {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -26,7 +34,7 @@
 }
 
 @mixin font-title-list {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -34,7 +42,7 @@
 }
 
 @mixin font-button {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -42,8 +50,17 @@
   text-transform: uppercase;
 }
 
+@mixin font-buttonX2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 @mixin font-titleX1 {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
@@ -52,11 +69,19 @@
 }
 
 @mixin font-description {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+}
+
+@mixin font-select {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
 }
 
 @mixin content-up {
@@ -72,4 +97,15 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+@mixin thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: $blue-dark;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 3px solid $blue-black;
+  cursor: grab;
 }

@@ -3,10 +3,19 @@
   position: relative;
 }
 
+.info__wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
 .info__title {
   @include content-up;
   @include font-title-main;
-  max-width: 780px
+  max-width: 780px;
+  margin-bottom: 80px;
 }
 
 .info__section{
@@ -41,4 +50,5 @@
   text-align: center;
   border-radius: 4px;
   padding: 15px 0;
+  cursor: pointer;
 }

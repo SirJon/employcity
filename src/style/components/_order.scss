@@ -1,11 +1,17 @@
-.order{
+.order {
   position: relative;
   background: rgba($color: $background-dark, $alpha: 0.9);
+  padding: 150px 0;
+  color: $white;
+}
+
+.order__wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 150px 0;
-  color: $white;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
 .order__title {
@@ -14,20 +20,62 @@
   margin-bottom: 30px;
 }
 
-.order__description{
+.order__description {
   @include font-description;
   color: $grey-light;
   margin-bottom: 80px;
 }
 
-.order__list{
+.order__list {
+  @include content-up;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.order__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    transform: translate(0, -50%);
+    top: 50px;
+    right: 20px;
+    background: $grey-main;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: 20px 0 0 0 $grey-main, 40px 0 0 0 $grey-main,
+      60px 0 0 0 $grey-main, 80px 0 0 0 $grey-main, 100px 0 0 0 $grey-main;
+  }
+  &:nth-last-child(1) {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.order__span {
+  width: 188px;
+}
+
+.order__svg {
+  width: 100px;
+  height: 100px;
+}
+
+.order__form {
   @include content-up;
 }
 
-.order__form{
-  @include content-up;
-}
-
-.order__background{
+.order__background {
   @include background;
 }
