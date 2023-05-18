@@ -14,24 +14,38 @@
       <a href="" class="header__link header__logo link">
         <span>LoremIpsum.</span><span class="color--blue-dark">Net</span>
       </a>
-      <ul class="header__list">
-        <li class="header__item color--blue-standart">
-          <a href="" class="header__link link">Бизнес</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link link">О нас</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link link">Цены</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link link">Оформить заказ</a>
-        </li>
-      </ul>
+      <div class="header__wrapper--list">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="" class="header__link link">Бизнес</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link link">О нас</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link link">Цены</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link link">Оформить заказ</a>
+          </li>
+          <button class="header__button--close">
+            <span class="visually-hidden">close menu</span>
+            <svg class="header__svg">
+              <use xlink:href="./src/svg/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </ul>
+      </div>
+      <button class="header__button--open">
+        <span class="visually-hidden">open menu</span>
+        <svg class="header__svg">
+          <use xlink:href="./src/svg/sprite.svg#open"></use>
+        </svg>
+      </button>
     </nav>
   </header>
 
-  <main class="main">
+  <!-- <main class="main">
     <article class="info">
       <div class="info__wrapper">
         <h1 class="info__title">
@@ -193,7 +207,7 @@
         </li>
       </ul>
     </div>
-  </footer>
+  </footer> -->
 </body>
 <script type="module" src="/main.js"></script>
 

@@ -104,6 +104,17 @@
       fill="#3E9CDC" />
   </symbol>
 
+  <symbol id="close" viewBox="0 0 28 28">
+    <path d="M7 7L21 21" stroke-width="2" stroke-linecap="round" />
+    <path d="M21.0039 7L7.00391 21" stroke-width="2" stroke-linecap="round" />
+  </symbol>
+
+  <symbol id="open" viewBox="0 0 28 28">
+    <path d="M3.5 21H24.5M3.5 7H24.5H3.5ZM3.5 14H24.5H3.5Z" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </symbol>
+
+
 
 
 
