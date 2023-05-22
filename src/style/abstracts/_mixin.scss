@@ -28,9 +28,14 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 34px;
+  line-height: 38px;
   text-transform: uppercase;
+
+  @media (min-width: $t-min) {
+    font-size: 48px;
+    line-height: 58px;
+  }
 }
 
 @mixin font-title-list {
@@ -63,9 +68,14 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 800;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 28px;
+  line-height: 32px;
   text-transform: uppercase;
+
+  @media (min-width: $t-min) {
+    font-size: 36px;
+    line-height: 43px;
+  }
 }
 
 @mixin font-description {

@@ -1,8 +1,21 @@
 .form {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 30px;
   width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $t-min) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $d-min) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .form__wrapper--range {
@@ -14,11 +27,21 @@
 }
 
 .form__wrapper--inputs {
-  grid-column: 1/4;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 30px;
   width: 100%;
+
+  @media (min-width: $t-min) {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $d-min) {
+    grid-column: 1/4;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .form__list--select {
@@ -76,11 +99,11 @@
     display: block;
   }
 
-  .form__item--select{
+  .form__item--select {
     cursor: pointer;
   }
 
-  .form__svg--select{
+  .form__svg--select {
     transform: rotate(180deg);
     fill: $white;
   }
@@ -92,15 +115,22 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  gap: 10px
+}
+
+.form__span--shrink{
+  flex-shrink: 0
 }
 
 .form__input {
   @include font-description;
   color: $black-light;
   text-align: left;
+
   &::placeholder {
     color: $black-light;
   }
+
   background: rgba($color: $white, $alpha: 0.85);
   outline: none;
   border: 1px solid $white;
@@ -130,12 +160,15 @@
   height: 6px;
   border: 1px solid $white;
   border-radius: 5px;
+
   &::-webkit-slider-thumb {
     @include thumb;
   }
+
   &::-moz-range-thumb {
     @include thumb;
   }
+
   &::-ms-thumb {
     @include thumb;
   }

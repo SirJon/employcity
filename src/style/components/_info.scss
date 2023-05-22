@@ -1,14 +1,20 @@
-.info{
+.info {
   padding: 200px 0 150px;
   position: relative;
 }
 
-.info__wrapper{
+.info__wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: $max-width;
   margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $d-min) {
+    padding: 0;
+  }
 }
 
 .info__title {
@@ -18,20 +24,20 @@
   margin-bottom: 80px;
 }
 
-.info__section{
+.info__section {
   @include content-up;
 }
 
-.info__background{
+.info__background {
   @include background;
 }
 
-.info__subtitle{
+.info__subtitle {
   @include font-title-list;
   margin-bottom: 10px;
 }
 
-.info__list{
+.info__list {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -39,16 +45,35 @@
   margin-bottom: 80px;
 }
 
-.info__wrapper--button{
-  display: flex;
-  gap: 30px;
+.info__item{
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -11px;
+    transform: translate(0, -50%);
+    width: 5px;
+    height: 1.5px;
+    background: $black;
+  }
 }
 
-.info__button{
+.info__wrapper--button {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  @media (min-width: $t-min) {
+    gap: 30px;
+  }
+}
+
+.info__button {
   @include font-button;
   width: 183px;
   text-align: center;
   border-radius: 4px;
-  padding: 15px 0;
+  padding: 12px 0;
   cursor: pointer;
 }
