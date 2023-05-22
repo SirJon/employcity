@@ -77,6 +77,14 @@
 
 .header__link {
   @include font-header;
+  transition: all 0.3s ease-out;
+
+  @media (min-width: $d-min) {
+    &:hover,
+    &:focus {
+      color: $blue-standart;
+    }
+  }
 }
 
 .header__logo {

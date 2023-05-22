@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
+  font-family: 'Lato';
 }
 
 .main {
@@ -28,11 +29,29 @@
 .button--blue {
   border: 1px solid $white;
   background: $blue-light;
+  transition: all 0.3s ease-out;
+
+  @media (min-width: $d-min) {
+    &:hover,
+    &:focus {
+      background: rgba(61, 64, 80, 0.85);
+      color: $white;
+    }
+  }
 }
 
 .button--white {
   border: 1px solid $grey;
   background: $white;
+  transition: all 0.3s ease-out;
+
+  @media (min-width: $d-min) {
+    &:hover,
+    &:focus {
+      background: $grey;
+      color: $white;
+    }
+  }
 }
 
 .visually-hidden {
